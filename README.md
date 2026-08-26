@@ -8,8 +8,12 @@
 </p>
 
 <p align="center">
-  <b>🌊 Powered by <a href="https://wavespeed.ai?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api">WaveSpeed AI</a> — serverless Kling API, pay-as-you-go, zero cold starts.</b><br>
+  <b>🌊 Powered by <a href="https://wavespeed.ai?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api">WaveSpeedAI</a> — serverless Kling API, pay-as-you-go, zero cold starts.</b><br>
   <a href="https://wavespeed.ai/kling-3-api?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api"><b>→ Get a Kling 3.0 API key</b></a> &nbsp;·&nbsp; <a href="https://wavespeed.ai/kling-o3-api?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api"><b>→ Try Kling o3</b></a>
+</p>
+
+<p align="center">
+  🖥️ <b>No code?</b> Generate in your browser (no setup, free to start) → <a href="https://wavespeed.ai/video-generator?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api"><b>WaveSpeedAI Video Generator</b></a>
 </p>
 
 ---
@@ -278,7 +282,7 @@ All variants open in-browser with a copy-paste API snippet.
 ---
 
 ## Related Model Guides
-Part of the WaveSpeed **Awesome Model** series — one guide per frontier model, all runnable through one API:
+Part of the WaveSpeedAI **Awesome Model** series — one guide per frontier model, all runnable through one API:
 
 - 🎬 [awesome-seedance-api](https://github.com/WaveSpeedAI/awesome-seedance-api) — ByteDance Seedance video
 - 🌊 [awesome-wan-api](https://github.com/WaveSpeedAI/awesome-wan-api) — Alibaba Wan video
@@ -300,4 +304,4 @@ PRs welcome:
 [CC0-1.0](LICENSE) — text & prompts are free to use. Model outputs follow the model provider's and [WaveSpeed](https://wavespeed.ai)'s terms.
 
 ---
-<p align="center"><sub>Maintained by <a href="https://wavespeed.ai?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api">WaveSpeed AI</a> — the fastest way to run frontier image & video models via one API. <a href="https://wavespeed.ai/kling-3-api?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api"><b>Run Kling →</b></a></sub></p>
+<p align="center"><sub>Maintained by <a href="https://wavespeed.ai?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api">WaveSpeedAI</a> — the fastest way to run frontier image & video models via one API. <a href="https://wavespeed.ai/kling-3-api?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api"><b>Run Kling →</b></a></sub></p>
