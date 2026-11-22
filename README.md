@@ -1,15 +1,15 @@
 # Awesome Kling API 🎞️ — Prompts, Variants & One-Call Video Generation
 
-> The most complete open guide to **Kuaishou Kling — the cinematic AI video model (Kling v3.0, o3, motion-control, lipsync, effects)** — a community prompt library and a single API to run every variant.
+> The most complete open guide to **Kuaishou Kling — the cinematic AI video model (Kling 4.0 · 4.0 Flash · 3.0 · o3 · Kling Image 4.0)** — a community prompt library and a single API to run every variant.
 
 <p align="center">
-  <a href="https://wavespeed.ai/kling-3-api?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api"><img src="https://img.shields.io/badge/▶_Run_Kling_3.0-Get_API_Key-00E5FF?style=for-the-badge&labelColor=0B0B0F" alt="Run Kling 3.0"></a>
-  <a href="https://wavespeed.ai/kling-o3-api?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api"><img src="https://img.shields.io/badge/Kling_o3-Try_Now-7C3AED?style=for-the-badge&labelColor=0B0B0F" alt="Kling o3"></a>
+  <a href="https://wavespeed.ai/kling-4-api?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api"><img src="https://img.shields.io/badge/▶_Run_Kling_4.0-Get_API_Key-00E5FF?style=for-the-badge&labelColor=0B0B0F" alt="Run Kling 4.0"></a>
+  <a href="https://wavespeed.ai/kling-3-api?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api"><img src="https://img.shields.io/badge/Kling_3.0-Try_Now-7C3AED?style=for-the-badge&labelColor=0B0B0F" alt="Kling 3.0"></a>
 </p>
 
 <p align="center">
   <b>🌊 Powered by <a href="https://wavespeed.ai?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api">WaveSpeedAI</a> — serverless Kling API, pay-as-you-go, zero cold starts.</b><br>
-  <a href="https://wavespeed.ai/kling-3-api?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api"><b>→ Get a Kling 3.0 API key</b></a> &nbsp;·&nbsp; <a href="https://wavespeed.ai/kling-o3-api?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api"><b>→ Try Kling o3</b></a>
+  <a href="https://wavespeed.ai/kling-4-api?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api"><b>→ Get a Kling 4.0 API key</b></a> &nbsp;·&nbsp; <a href="https://wavespeed.ai/kling-3-api?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api"><b>→ Try Kling 3.0</b></a>
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@
 > **Generate right now**
 > ```bash
 > npm i -g @wavespeed/cli && wavespeed login
-> wavespeed run kwaivgi/kling-v3.0-pro/text-to-video -p "your prompt"
+> wavespeed run kwaivgi/kling-v4.0/text-to-video -p "your prompt"
 > ```
 > No GPU, no cold start — the same endpoint powers every prompt below.
 
@@ -39,7 +39,7 @@
 
 ## What is Kling?
 
-**Kling** (by Kuaishou) is a cinematic AI video model known for smooth motion, strong physics, and long-shot coherence. WaveSpeed serves the full lineup — **Kling v3.0** (pro / 4k / turbo), **Kling o3**, motion-control, lipsync, elements, and effects.
+**Kling** (by Kuaishou) is a cinematic AI video model known for smooth motion, strong physics, and long-shot coherence. WaveSpeedAI serves the full lineup — the flagship **Kling 4.0** and **4.0 Flash** (text, image and reference to video, video edit, video extend), Kling 3.0 (std / pro / 4k / turbo), Kling o3, Kling Image 4.0, motion control, lipsync and effects.
 
 ---
 
@@ -48,7 +48,7 @@
 One endpoint, submit + poll. Swap the model path for any variant below.
 
 ```bash
-curl -s -X POST "https://api.wavespeed.ai/api/v3/kwaivgi/kling-v3.0-pro/text-to-video" \
+curl -s -X POST "https://api.wavespeed.ai/api/v3/kwaivgi/kling-v4.0/text-to-video" \
   -H "Authorization: Bearer $WAVESPEED_API_KEY" -H "Content-Type: application/json" \
   -d '{"prompt": "A samurai drawing a katana in slow motion, cherry blossoms, cinematic", "aspect_ratio": "16:9"}'
 # → {"data": {"id": "<prediction_id>"}}
@@ -58,7 +58,7 @@ curl -s "https://api.wavespeed.ai/api/v3/predictions/<prediction_id>/result" \
 # → status: completed → outputs: ["<url>"]
 ```
 
-**[→ Get your Kling 3.0 API key](https://wavespeed.ai/kling-3-api?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api)** · pay-as-you-go, live pricing on each model page.
+**[→ Get your Kling 4.0 API key](https://wavespeed.ai/kling-4-api?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api)** · pay-as-you-go, live pricing on each model page.
 
 **Python wrapper:** [kling-4.0-api](https://github.com/WaveSpeedAI/kling-4.0-api) — one typed function per Kling 4.0 endpoint, built on the official SDK.
 
@@ -68,13 +68,22 @@ curl -s "https://api.wavespeed.ai/api/v3/predictions/<prediction_id>/result" \
 
 All variants open in-browser with a copy-paste API snippet.
 
-### Kling v3.0 — flagship &nbsp;[▶ API](https://wavespeed.ai/kling-3-api)
-[v3.0-pro t2v](https://wavespeed.ai/models/kwaivgi/kling-v3.0-pro/text-to-video) · [v3.0-pro i2v](https://wavespeed.ai/models/kwaivgi/kling-v3.0-pro/image-to-video) · [v3.0-4k](https://wavespeed.ai/models/kwaivgi/kling-v3.0-4k/text-to-video) · [v3-turbo-pro](https://wavespeed.ai/models/kwaivgi/kling-v3-turbo-pro/text-to-video)
+### Kling 4.0 — flagship &nbsp;[▶ API](https://wavespeed.ai/kling-4-api?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api)
+[text-to-video](https://wavespeed.ai/models/kwaivgi/kling-v4.0/text-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api) · [image-to-video](https://wavespeed.ai/models/kwaivgi/kling-v4.0/image-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api) · [reference-to-video](https://wavespeed.ai/models/kwaivgi/kling-v4.0/reference-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api) · [video-edit](https://wavespeed.ai/models/kwaivgi/kling-v4.0/video-edit?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api) · [video-extend](https://wavespeed.ai/models/kwaivgi/kling-v4.0/video-extend?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api)
 
-### Kling o3 & tools &nbsp;[▶ API](https://wavespeed.ai/kling-o3-api)
-[motion-control](https://wavespeed.ai/models/kwaivgi/kling-v3.0-pro/motion-control) · [lipsync](https://wavespeed.ai/models/kwaivgi/kling-lipsync/text-to-video) · [effects](https://wavespeed.ai/models/kwaivgi/kling-effects) · [elements](https://wavespeed.ai/models/kwaivgi/kling-elements)
+### Kling 4.0 Flash &nbsp;[▶ API](https://wavespeed.ai/kling-4-api?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api)
+[text-to-video](https://wavespeed.ai/models/kwaivgi/kling-v4.0-flash/text-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api) · [image-to-video](https://wavespeed.ai/models/kwaivgi/kling-v4.0-flash/image-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api) · [reference-to-video](https://wavespeed.ai/models/kwaivgi/kling-v4.0-flash/reference-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api) · [video-edit](https://wavespeed.ai/models/kwaivgi/kling-v4.0-flash/video-edit?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api)
 
-> Full catalog: **[wavespeed.ai/kling-3-api](https://wavespeed.ai/kling-3-api?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api)**
+### Kling 3.0 &nbsp;[▶ API](https://wavespeed.ai/kling-3-api?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api)
+[v3.0-pro t2v](https://wavespeed.ai/models/kwaivgi/kling-v3.0-pro/text-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api) · [v3.0-pro i2v](https://wavespeed.ai/models/kwaivgi/kling-v3.0-pro/image-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api) · [v3.0-4k](https://wavespeed.ai/models/kwaivgi/kling-v3.0-4k/text-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api) · [v3-turbo-pro](https://wavespeed.ai/models/kwaivgi/kling-v3-turbo-pro/text-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api) · [motion-control](https://wavespeed.ai/models/kwaivgi/kling-v3.0-pro/motion-control?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api)
+
+### Kling o3 &nbsp;[▶ API](https://wavespeed.ai/kling-o3-api?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api)
+[o3-pro t2v](https://wavespeed.ai/models/kwaivgi/kling-video-o3-pro/text-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api) · [o3-pro i2v](https://wavespeed.ai/models/kwaivgi/kling-video-o3-pro/image-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api) · [o3-pro reference](https://wavespeed.ai/models/kwaivgi/kling-video-o3-pro/reference-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api) · [o3-pro video-edit](https://wavespeed.ai/models/kwaivgi/kling-video-o3-pro/video-edit?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api)
+
+### Kling Image 4.0 & tools &nbsp;[▶ API](https://wavespeed.ai/kling-image-4-api?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api)
+[image 4.0 t2i](https://wavespeed.ai/models/kwaivgi/kling-image-v4.0/text-to-image?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api) · [image 4.0 edit](https://wavespeed.ai/models/kwaivgi/kling-image-v4.0/edit?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api) · [lipsync](https://wavespeed.ai/models/kwaivgi/kling-lipsync/audio-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api) · [effects](https://wavespeed.ai/models/kwaivgi/kling-effects?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api) · [elements](https://wavespeed.ai/models/kwaivgi/kling-elements?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api)
+
+> Full catalog: **[wavespeed.ai/kling-4-api](https://wavespeed.ai/kling-4-api?utm_source=github&utm_medium=readme&utm_campaign=awesome-kling-api)**
 
 ---
 
